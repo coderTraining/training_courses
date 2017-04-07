@@ -1,0 +1,21 @@
+pre {
+    padding: 2rem;
+    background-color: #1d1e1f;
+    color: #fff;
+}
+.side {
+    position: fixed;
+    top: 50%; 
+}
+.side a {
+    color: #fff;
+}
+.side a:hover, .side a:focus {
+    color: #ccc;
+}
+.side-right {
+    right: 10px;
+}
+.side-left {
+    left: 10px;
+}
