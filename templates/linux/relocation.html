@@ -1,0 +1,40 @@
+{extends file='basic.html'}
+{block name='title'}Shell重定向{/block}
+{block name='body'}
+<table class='table'>
+    <thead><tr>
+        <th>命令</th>
+        <th>功能</th>
+    </tr></thead>
+    <tbody>
+        <tr>
+            <td>ls -l /usr/bin &gt; ls-out.txt</td>
+            <td>将标准输出(stdout)重定向到文件</td>
+        </tr>
+        <tr>
+            <td>ls -l /uusr/bin 2&gt; ls-err.txt</td>
+            <td>将标准错误(stderr)重定向到文件</td>
+        </tr>
+        <tr>
+            <td>ls -l /bin &gt;&gt; ls-out.txt</td>
+            <td>将标准输出追加到文件</td>
+        </tr>
+        <tr>
+            <td>ls -l /usr/bin /uusr/bin 2&gt&1 ls-err.txt</td>
+            <td>将标准输出和标准错误重定向到一个文件</td>
+        </tr>
+        <tr>
+            <td>ls -l /bin/usr 2&gt; /dev/null</td>
+            <td>废弃掉错误输出</td>
+        </tr>
+        <tr>
+            <td>cat &lt; t.txt</td>
+            <td>将文件重定向到标准输入，标准输入重定向经常用于mysql导入sql命令</td>
+        </tr>
+        <tr>
+            <td>ls -l /usr/bin /bin | sort | less</td>
+            <td>将ls命令的输出通过管道重定向给sort，排序结果再通过管道重定向给less进行浏览</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

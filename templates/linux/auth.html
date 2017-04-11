@@ -1,0 +1,36 @@
+{extends file='basic.html'}
+{block name='title'}Shell权限{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>命令</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>显示用户标识,默认为当前用户</td>
+        </tr>
+        <tr>
+            <td>chmod</td>
+            <td>改变文件／目录权限</td>
+        </tr>
+        <tr>
+            <td>chown</td>
+            <td>改变文件／目录所有权</td>
+        </tr>
+        <tr>
+            <td>umask</td>
+            <td>设置文件的默认权限</td>
+        </tr>
+        <tr>
+            <td>sudo</td>
+            <td>以另一个用户的身份来执行命令</td>
+        </tr>
+        <tr>
+            <td>passwd</td>
+            <td>更改用户密码</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

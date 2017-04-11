@@ -1,0 +1,46 @@
+{extends file='basic.html'}
+{block name='title'}VIM命令模式之查找{/block}
+{block name='body'}
+<table class="table">
+    <thead>
+    <tr>
+        <th>命令</th>
+        <th>意义</th>
+        <th>相关操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>/，?</td>
+        <td>正向查找，反向查找</td>
+        <td>
+            n 向下查找<br/>
+            N 向上查找
+        </td>
+    </tr>
+    <tr>
+        <td>/[up/down]，:[up/down]</td>
+        <td>浏览搜索历史，浏览命令历史</td>
+        <td></td>
+    <tr>
+        <td>
+            :s/old/new<br/>
+            :s/old/new/g<br/>
+            :%s/old/new/<br/>
+            :%s/old/new/g<br/>
+            :10,20 s/old/new/<br/>
+            :10,20 s/old/new/g
+        </td>
+        <td>
+            替换当前行第一个匹配<br/>
+            替换当前行所有匹配<br/>
+            替换所有行第一个匹配<br/>
+            替换所有行所有匹配<br/>
+            替换10到20行每行的第一个匹配<br/>
+            替换10到20行所有匹配
+        </td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+{/block}

@@ -1,0 +1,38 @@
+{extends file='basic.html'}
+{block name='title'}PHP和INI配置文件{/block}
+{block name='body'}
+    <h3>一、example.ini</h3><br/>
+    <pre><code>
+        ; 以;开头的行为注释
+        ; [section] 为节
+        ; key = value, 空格可有多个，也可以没有
+        ; mysql配置
+        [mysql]
+        host = 127.0.0.1
+        port = 3306
+        user = training
+        passwd=training
+        database   =training
+
+        ; redis配置
+        [redis]
+        host = 127.0.0.1
+        port = 6379
+
+        ; 支持数组
+        version[] = 1.0
+        version[] = 1.1
+
+        ; 支持关联数组
+        mongo['host'] = 127.0.0.1
+        mongo['port'] = 27017
+    </code></pre><br/><br/>
+
+    <h3>二、php中使用</h3><br/>
+    <pre><code>
+        $iniArr = parse_ini_file('example.ini');
+        print_r($iniArr);
+
+        // 如果已经载入，可以用parse_ini_string解析
+    </code></pre>
+{/block}

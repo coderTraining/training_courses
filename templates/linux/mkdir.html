@@ -1,0 +1,28 @@
+{extends file='basic.html'}
+{block name='title'}Shell创建目录-mkdir{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>选项</th>
+        <th>功能</th>
+        <th>举例</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td>创建目录</td>
+            <td>{literal}mkdir dir<br/>mkdir dir/dir{a,b,c}<br/>mkdir dir/dir{1..9}{/literal}</td>
+        </tr>
+        <tr>
+            <td>-p</td>
+            <td>创建级联目录</td>
+            <td>mkdir -p dir/dir0/dir1</td>
+        </tr>
+        <tr>
+            <td>-m</td>
+            <td>创建目录时同时指定权限</td>
+            <td>mkdir -p -m a=rwx dir/dir0/dir2<td>
+        </tr>
+    </tbody>
+</table>
+{/block}

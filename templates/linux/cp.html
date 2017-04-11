@@ -1,0 +1,33 @@
+{extends file='basic.html'}
+{block name='title'}Shell复制文件和目录-cp{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>选项</th>
+        <th>长选项</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>-a</td>
+            <td>--archive</td>
+            <td>复制文件和目录及其属性，包括所有权和权限</td>
+        </tr>
+        <tr>
+            <td>-i</td>
+            <td>--interactive</td>
+            <td>在覆盖一个已存在的文件前，提示用户确认</td>
+        </tr>
+        <tr>
+            <td>-r</td>
+            <td>--recursive</td>
+            <td>递归地复制目录及其内容</td>
+        </tr>
+        <tr>
+            <td>-u</td>
+            <td>--update</td>
+            <td>只复制那些目标目录中不存在或比目标目录更新的文件</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

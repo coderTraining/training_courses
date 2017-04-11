@@ -1,0 +1,35 @@
+{extends file='basic.html'}
+{block name='title'}Shell目录导航{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>命令</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>pwd</td>
+            <td>查看当前工作目录</td>
+        </tr>
+        <tr>
+            <td>cd</td>
+            <td>改变目录<br/>
+                cd或cd ~ 到当前用户主目录<br/>
+                cd ~username 到指定用户主目录<br/>
+                cd - 返回之前的目录<br/>
+                cd /usr/local 到绝对目录<br/>
+                cd bin或cd ./bin 到相对目录<br/>
+                cd .. 到上级目录<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>ls</td>
+            <td>列出目录内容</td>
+        </tr>
+        <tr>
+            <td>file</td>
+            <td>查看文件类型</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

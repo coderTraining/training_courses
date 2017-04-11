@@ -1,0 +1,44 @@
+{extends file='basic.html'}
+{block name='title'}Shell查看系统状况{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>命令</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>less /proc/cpuinfo</td>
+            <td>查看CPU信息</td>
+        </tr>
+        <tr>
+            <td>less /proc/meminfo</td>
+            <td>查看内存信息</td>
+        </tr>
+        <tr>
+            <td>free -h</td>
+            <td>查看内存使用情况</td>
+        </tr>
+        <tr>
+            <td>df -h</td>
+            <td>查看硬盘分区和使用情况</td>
+        </tr>
+        <tr>
+            <td>top</td>
+            <td>查看系统整体状况</td>
+        </tr>
+        <tr>
+            <td>ifconfig</td>
+            <td>查看ip配置</td>
+        </tr>
+        <tr>
+            <td>w</td>
+            <td>查看当前登录用户</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>查看当前日期和时间</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

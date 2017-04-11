@@ -1,0 +1,30 @@
+{extends file='basic.html'}
+{block name='title'}VIM起步{/block}
+{block name='body'}
+<table class="table">
+    <thead>
+    <tr>
+        <th>命令</th>
+        <th>意义</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>vim，vim test</td>
+        <td>用vim打开未命名的新文件，用vim打开文件test<td>
+    </tr>
+    <tr>
+        <td>:q，:w，:wq，:x，:q!</td>
+        <td>退出，保存，保存并退出，保存并退出，不保存并强制退出</td>
+    </tr>
+    <tr>
+        <td>i，I</td>
+        <td>当前光标前插入，当前行前插入</td>
+    </tr>
+    <tr>
+        <td>Esc</td>
+        <td>编辑模式切换到正常模式</td>
+    </tr>
+    </tbody>
+</table>
+{/block}

@@ -1,0 +1,36 @@
+{extends file='basic.html'}
+{block name='title'}VIM正常模式之查找{/block}
+{block name='body'}
+<table class="table">
+    <thead>
+    <tr>
+        <th>命令</th>
+        <th>意义</th>
+        <th>相关操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>fd，3fd</td>
+        <td>行内搜索第一个d，行内搜索第三个d</td>
+        <td>
+            ; 向下查找<br/>
+            , 向上查找<br/>
+            F 反向查找
+        </td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>查找当前单词</td>
+        <td>
+            n 向下查找<br/>
+            N 向上查找 
+        </td>
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>括号匹配，当光标在括号的一边时按下%光标将定位到配对的另一边</td>
+    </tr>
+    </tbody>
+</table>
+{/block}

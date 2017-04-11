@@ -1,0 +1,45 @@
+{extends file='basic.html'}
+{block name='title'}Shell文件相关{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>命令</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>file</td>
+            <td>查看文件类别</td>
+        </tr>
+        <tr>
+            <td>wc</td>
+            <td>字、行、字符、字节计数<br/>
+                wc -l file 查看文件行数<br/>
+           wc -w file 查看文件词数<br/>
+           wc -c file 查看文件字节数<br/>
+           wc -m file 查看多字节文本字数<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>查看文件末尾部分<br/>
+                tail -n file 查看文件最后n行，默认为20行<br/>
+                tail -f file 查看文件的持续输出，常用语查看实时日志<br/>
+            <td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>查看文件开头部分<br/>
+                head -n file 查看文件开头n行，默认为20行<br/>
+            <td>
+        </tr>
+        <tr>
+            <td>cat</td>
+            <td>连接和打印文件<br/>
+                cat file 输出文件内容<br/>
+                cat file1 file2 将多个文件内容连接并输出<br/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{/block}

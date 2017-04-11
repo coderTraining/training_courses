@@ -1,0 +1,87 @@
+{extends file='basic.html'}
+{block name='title'}Shell软件包管理{/block}
+{block name='body'}
+<h3>linux软件安装方式</h3><br/>
+<ul>
+    <li>源代码编译方式
+        <ul>
+            <li>优点：可实现更细微的选项配置；可自行选择安装某软件的特定版本</li>
+            <li>缺点：需手工安装依赖模块;需手工配置安装后的管理脚本（如服务软件包的开机自启动）</li>
+        </ul>
+    </li>
+    <li>软件包模式
+        <ul>
+            <li>优点：自动安装依赖模块；自动加入服务管理体系</li>
+            <li>缺点：只能安装软件源支持的特定版本（该版本可能很旧）</li>
+        </ul>
+    </li>
+</ul>
+
+<br/><h3>ubuntu软件包管理高级命令</h3><br/>
+<table class='table'>
+    <thead><tr>
+        <th>命令</th>
+        <th>功能</th>
+    </tr></thead>
+    <tbody>
+        <tr>
+            <td>sudo apt update</td>
+            <td>更新可用包列表，若有系统升级包/新版本软件包会提醒</td>
+        </tr>
+        <tr>
+            <td>sudo apt upgrade</td>
+            <td>升级系统／软件包</td>
+        </tr>
+        <tr>
+            <td>sudo apt install package_name</td>
+            <td>安装指定软件包，会自动安装依赖包</td>
+        </tr>
+        <tr>
+            <td>sudo apt remove package_name</td>
+            <td>安装指定软件包，会自动安装依赖包</td>
+        </tr>
+        <tr>
+            <td>sudo apt autoremove</td>
+            <td>自动删除所有不被依赖的无用软件</td>
+        </tr>
+        <tr>
+            <td>sudo apt list php7.0*</td>
+            <td>查看软件源中所有以php开头的软件包</td>
+        </tr>
+        <tr>
+            <td>sudo apt search php</td>
+            <td>搜索描述中包含php的所有软件包</td>
+        </tr>
+        <tr>
+            <td>sudo apt show php7.0-cli</td>
+            <td>显示包详情</td>
+        </tr>
+    </tbody>
+</table>
+
+<br/><h3>ubuntu软件包管理低级命令</h3><br/>
+<table class='table'>
+    <thead><tr>
+        <th>命令</th>
+        <th>功能</th>
+    </tr></thead>
+    <tbody>
+        <tr>
+            <td>dpkg -i package_file</td>
+            <td>安装／更新已经下载的软件包package_file</td>
+        </tr>
+        <tr>
+            <td>dpkg -l</td>
+            <td>列出已安装的软件包</td>
+        </tr>
+        <tr>
+            <td>dpkg -s</td>
+            <td>显示包详情</td>
+        </tr>
+        <tr>
+            <td>dpkg -S file_name</td>
+            <td>查看文件属于哪个软件包</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

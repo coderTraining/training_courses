@@ -1,0 +1,66 @@
+{extends file='basic.html'}
+{block name='title'}PHP安装{/block}
+{block name='body'}
+    <h3>一、apt命令</h3><br/>
+    <pre><code>
+        sudo apt install php7.0-cli php7.0-fpm php7.0-common php7.0-curl php7.0-gd php7.0-json \
+        php7.0-mbstring php7.0-mcrypt php7.0-readline php-igbinary
+    </code></pre>
+    <br/><br/>
+    <h3>二、各模块含义</h3><br/>
+    <table class="table">
+        <thead><tr>
+            <th>模块名称</th>
+            <th>用途</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <td>php7.0-cli</td>
+                <td>php7.0命令行，用于命令行脚本执行</td>
+            </tr>
+            <tr>
+                <td>php7.0-fpm</td>
+                <td>php7.0 fpm模块，用于web请求处理</td>
+            </tr>
+            <tr>
+                <td>php7.0-common</td>
+                <td>php7.0通用模块</td>
+            </tr>
+            <tr>
+                <td>php7.0-curl</td>
+                <td>curl扩展，用于网页／网站资源的下载</td>
+            </tr>
+            <tr>
+                <td>php7.0-gd</td>
+                <td>php图形处理扩展，可创建／处理图形文件</td>
+            </tr>
+            <tr>
+                <td>php7.0-json</td>
+                <td>json扩展，用于json数据的编码／解码</td>
+            </tr>
+            <tr>
+                <td>php7.0-mbstring</td>
+                <td>用于替换iconv的字符编码模块</td>
+            </tr>
+            <tr>
+                <td>php7.0-mcrypt</td>
+                <td>加解密的模块</td>
+            </tr>
+            <tr>
+                <td>php7.0-readline</td>
+                <td>主要用于php-cli，支持命令历史切换，如php -a时</td>
+            </tr>
+            <tr>
+                <td>php-igbinary</td>
+                <td>igbinary扩展，性能远高于自带的serialize/unserialize函数</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>三、验证安装</h3><br/>
+    <p>1、查看php版本</p>
+    <pre><code>php -v</code></pre><br/>
+    <p>2、查看php模块</p>
+    <pre><code>php -m</code></pre><br/>
+    <p>3、查看php-fpm进程</p>
+    <pre><code>ps -ef | grep php-fpm</code></pre>
+{/block}

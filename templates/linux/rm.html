@@ -1,0 +1,30 @@
+{extends file='basic.html'}
+{block name='title'}Shell复制文件和目录-cp{/block}
+{block name='body'}
+<blockquote class='blockquote my-5'>谨慎使用rm，尤其是rm -rf</blockquote>
+<p></p>
+<table class='table'>
+    <thead>
+        <th>选项</th>
+        <th>长选项</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>-i</td>
+            <td>--interactive</td>
+            <td>删除一个存在的文件前，提示用户确认</td>
+        </tr>
+        <tr>
+            <td>-r</td>
+            <td>--recursive</td>
+            <td>递归地删除目录及其内容</td>
+        </tr>
+        <tr>
+            <td>-f</td>
+            <td>--force</td>
+            <td>忽略不存在的文件并无需确认</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

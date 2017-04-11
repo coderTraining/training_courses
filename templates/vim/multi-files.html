@@ -1,0 +1,34 @@
+{extends file='basic.html'}
+{block name='title'}VIM多文件操作{/block}
+{block name='body'}
+<table class="table">
+    <thead>
+    <tr>
+        <th>命令</th>
+        <th>意义</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>vim file，vim file1 file2 ...</td>
+        <td>打开单个文件，打开多个文件(-o 多个文件水平排列，-O 多个文件垂直排列)</td>
+    </tr>
+    <tr>
+        <td>open file，split file，vsplit file</td>
+        <td>在当前窗口中打开一个新文件，水平切分新窗口打开文件(sp)，垂直切分新窗口打开文件(vsp)</td>
+    </tr>
+    <tr>
+        <td>:bn，:bp，:bd，:ls</td>
+        <td>切换到下一文件，切换到上一文件，关闭当前窗口，显示所有打开文件列表(或:args)</td>
+    </tr>
+    <tr>
+        <td>Ctrl+ww，Ctrl+wj，Ctrl+wk</td>
+        <td>移动到下一窗口，移动到下方的窗口，移动到上方的窗口</td>
+    </tr>
+    <tr>
+        <td>:wa，:qa，:only</td>
+        <td>保存所有文件，关闭所有窗口，仅保留当前窗口</td>
+    </tr>
+    </tbody>
+</table>
+{/block}

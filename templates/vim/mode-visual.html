@@ -1,0 +1,73 @@
+{extends file='basic.html'}
+{block name='title'}VIM可视模式{/block}
+{block name='body'}
+<h3>3种可视模式</h3><br/>
+<table class='table'>
+    <tr>
+        <td>v</td>
+        <td>逐个字符选择文本</td>
+    </tr>    
+    <tr>
+        <td>V</td>
+        <td>逐行选择文本</td>
+    </tr>
+    <tr>
+        <td>Ctrl+v</td>
+        <td>按块选择文本</td>
+    </tr>
+</table><br/>
+<h3>技巧</h3><br/>
+<table class='table'>
+    <tr>
+        <td>gv</td>
+        <td>重新选中之前可视模式选中的目标区域</td>
+    </tr>
+</table><br/>
+<h3>选中后的操作</h3><br/>
+<table class='table'>
+    <tr>
+        <td>x/d</td>
+        <td>删除选中文本</td>
+    </tr>
+    <tr>
+        <td>y</td>
+        <td>复制选中文本</td>
+    </tr>
+    <tr>
+        <td>c</td>
+        <td>修改选中文本</td>
+    </tr>
+    <tr>
+        <td>r</td>
+        <td>替换选中文本</td>
+    </tr>
+    <tr>
+        <td>I</td>
+        <td>在选中文本前插入</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>在选中文本后插入</td>
+    </tr>
+    <tr>
+        <td>u</td>
+        <td>选中区域转为小写</td>
+    </tr>
+    <tr>
+        <td>U</td>
+        <td>选中区域转为大写</td>
+    </tr>
+    <tr>
+        <td>~</td>
+        <td>选中区域大小写互换</td>
+    </tr>
+    <tr>
+        <td>&gt;</td>
+        <td>向右缩进一个单位</td>
+    </tr>
+    <tr>
+        <td>&lt;</td>
+        <td>向左缩进一个单位</td>
+    </tr>
+</table><br/>
+{/block}

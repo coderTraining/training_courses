@@ -1,0 +1,34 @@
+{extends file='basic.html'}
+{block name='title'}VIM插入模式{/block}
+{block name='body'}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>命令</th>
+                <th>意义</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>i，I</td>
+                <td>字符前插入，行首插入</td>
+            </tr>
+            <tr>
+                <td>a，A</td>
+                <td>字符后插入，行尾插入</td>
+            </tr>
+            <tr>
+                <td>o，O</td>
+                <td>当前行后插入一行，当前行前插入一行</td>
+            </tr>
+            <tr>
+                <td>s，S</td>
+                <td>删除当前字符再插入，删除当前行再插入</td>
+            </tr>
+            <tr>
+                <td>cw，cc，C</td>
+                <td>删除当前位置到单词末尾部分再插入，删除当前行再插入，删除当前行再插入</td>
+            </tr>
+        </tbody>
+    </table>
+{/block}

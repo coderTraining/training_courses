@@ -1,0 +1,49 @@
+{extends file='basic.html'}
+{block name='title'}Shell查看命令信息{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>命令</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>type</td>
+            <td>显示命令的类型，有4种类型：可执行程序、内置命令、Shell函数和别名</td>
+        </tr>
+        <tr>
+            <td>which</td>
+            <td>显示可执行程序的位置</td>
+        </tr>
+        <tr>
+            <td>whatis</td>
+            <td>显示一条命令的简述</td>
+        </tr>
+        <tr>
+            <td>help</td>
+            <td>获取内置命令的帮助</td>
+        </tr>
+        <tr>
+            <td>--help</td>
+            <td>可执行程序的帮助</td>
+        </tr>
+        <tr>
+            <td>man</td>
+            <td>查看命令的手册</td>
+        </tr>
+        <tr>
+            <td>info</td>
+            <td>查看带链接的手册<br/>
+                ? 显示帮助命令<br/>
+                PageUp/Backspace 返回上一页<br/>
+                PageDown/Spacebar 翻到下一页<br/>
+                n 显示下一节点<br/>
+                p 显示上一节点<br/>
+                u 返回父节点<br/>
+                Enter 进入当前链接<br/>
+                q 退出<br/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{/block}

@@ -1,0 +1,22 @@
+{extends file='basic.html'}
+{block name='title'}VIM正常模式之拷贝和粘贴{/block}
+{block name='body'}
+<table class="table">
+    <thead>
+    <tr>
+        <th>命令</th>
+        <th>意义</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>yy，yw，y$</td>
+        <td>复制当前行(yy=Y)，从当前位置复制到单词末尾，从当前位置复制到行尾</td>
+    </tr>
+    <tr>
+        <td>p</td>
+        <td>将剪切板中的内容粘贴到当前位置后(所有最后一次的d,y,x命令的结果都会缓存到默认剪切板)</td>
+    </tr>
+    </tbody>
+</table>
+{/block}

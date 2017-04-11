@@ -1,0 +1,14 @@
+{extends file='basic.html'}
+{block name='title'}Shell创建链接-ln{/block}
+{block name='body'}
+<h3>硬链接</h3><br/>
+<pre><code>ln item link</code></pre>
+<p><strong>缺点：</strong><br/>
+1、不能引用不在同一磁盘分区的文件；<br/>
+2、无法引用目录
+</p><br/>
+
+<h3>软链接</h3><br/>
+<pre><code>ln -s item link</code></pre>
+<p>现在常用的是软链接（又叫符号链接）</p>
+{/block}

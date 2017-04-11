@@ -1,0 +1,34 @@
+{extends file='basic.html'}
+{block name='title'}VIM正常模式其余命令{/block}
+{block name='body'}
+<table class="table">
+    <thead>
+    <tr>
+        <th>命令</th>
+        <th>意义</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>g~~，gUU，guu</td>
+        <td>当前行大小写转换，当前行全部大写，当前行全部小写(第3个字符为w时为当前单词，为G时为当前位置至文件末尾所有字符)</td>
+    </tr>
+    <tr>
+        <td>ZZ</td>
+        <td>保存并退出</td>
+    </tr>
+    <tr>
+        <td>u，U，Ctrl+r</td>
+        <td>撤销修改，整行撤销，撤销的撤销</td>
+    </tr>
+    <tr>
+        <td>.</td>
+        <td>重复前一次修改命令</td>
+    </tr>
+    <tr>
+        <td>Ctrl+z</td>
+        <td>挂起vim进入启动vim时的shell，之后在shell中用fg可重新回到vim</td>
+    </tr>
+    </tbody>
+</table>
+{/block}

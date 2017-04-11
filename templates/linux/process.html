@@ -1,0 +1,44 @@
+{extends file='basic.html'}
+{block name='title'}Shell进程和作业{/block}
+{block name='body'}
+<table class='table'>
+    <thead>
+        <th>命令</th>
+        <th>功能</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ps</td>
+            <td>显示当前终端进程</td>
+        </tr>
+        <tr>
+            <td>ps -ef</td>
+            <td>详细显示所有进程详情</td>
+        </tr>
+        <tr>
+            <td>top</td>
+            <td>详细显示系统状态及进程</td>
+        </tr>
+        <tr>
+            <td>bg</td>
+            <td>将当前暂停的进程打入后台</td>
+        </tr>
+        <tr>
+            <td>fg</td>
+            <td>将指定作业转到前台</td>
+        </tr>
+        <tr>
+            <td>jobs</td>
+            <td>查看当前终端下正在运行的所有作业</td>
+        </tr>
+        <tr>
+            <td>kill</td>
+            <td>关闭指定进程</td>
+        </tr>
+        <tr>
+            <td>killall</td>
+            <td>关闭指定名称的所有进程</td>
+        </tr>
+    </tbody>
+</table>
+{/block}

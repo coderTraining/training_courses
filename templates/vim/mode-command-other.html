@@ -1,0 +1,50 @@
+{extends file='basic.html'}
+{block name='title'}VIM命令模式之其余命令{/block}
+{block name='body'}
+<table class="table">
+    <thead>
+    <tr>
+        <th>命令</th>
+        <th>意义</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>:q，:w，:wq，:x，:w!，:q!</td>
+        <td>退出，保存，保存并退出，保存并退出(文件没修改的话不会修改时间戳)，强制保存，强制退出并忽略所有修改</td>
+    </tr>
+    <tr>
+        <td>:w file</td>
+        <td>另存为file</td>
+    </tr>
+    <tr>
+        <td>:r file</td>
+        <td>读取file内容放到当前行下面</td>
+    </tr>
+    <tr>
+        <td>:1,10 co 20</td>
+        <td>将1至10行复制到第20行之后<td>
+    </tr>
+    <tr>
+        <td>:1,10 m 20</td>
+        <td>将1至10行移动到第20行之后<td>
+    </tr>
+    <tr>
+        <td>:10 pu</td>
+        <td>将剪切板中的内容粘贴到第10行后<td>
+    </tr>
+    <tr>
+        <td>:!command</td>
+        <td>执行外部命令，如:!ls 列出当前目录下文件</td>
+    </tr>
+    <tr>
+        <td>:=</td>
+        <td>显示文件总行数</td>
+    </tr>
+    <tr>
+        <td>:help，:help d，:help 'number'，Ctrl+]，Ctro+o/t</td>
+        <td>帮助，d命令的帮助，number选项的帮助，帮助中的链接点击方法，从链接内容返回</td>
+    </tr>
+    </tbody>
+</table>
+{/block}

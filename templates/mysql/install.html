@@ -1,0 +1,21 @@
+{extends file='basic.html'}
+{block name='title'}MySQL安装{/block}
+{block name='body'}
+    <h3>一、安装</h3><br/>
+    <pre><code>
+        sudo apt install mysql-client mysql-server mysql-common php70-mysql
+    </code></pre><br/><br/>
+
+    <h3>二、额外配置</h3><br/>
+    <p>修改/etc/mysql/mysql.conf.d/mysqld.cnf,在[mysqld]下增加一项</p>
+    <pre><code>character_set_server = utf8</code></pre><br/><br/><br/>
+
+    <h3>三、重启mysql</h3><br/>
+    <pre><code>sudo service mysql restart</code></pre><br/><br/>
+
+    <h3>四、验证安装和配置</h3><br/>
+    <p>1、验证编码配置</p>
+    <pre><code>show variables like '%character%';</code></pre><br/>
+    <p>2、验证php的mysql扩展安装</p>
+    <pre><code>php -m | grep mysql</code></pre>
+{/block}

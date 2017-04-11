@@ -1,0 +1,31 @@
+{extends file='basic.html'}
+{block name='title'}SHELL{/block}
+{block name='body'}
+<h3>定义</h3><br/>
+<p>shell是一个用C语言编写的有特殊功能的程序，提供用户与内核交互操作的一个接口</p><br/>
+
+<h3>查看系统支持的shell环境和当前shell</h3><br/>
+<pre><code>
+#系统支持的shell
+cat /etc/shells;
+
+#当前使用的shell
+echo $SHELL;
+</code></pre><br/>
+
+<h3>几种shell环境简介</h3><br/>
+<dl>
+    <dt>sh</dt>
+    <dd>标准shell，最早出现，目前会链接到其他环境</dd>
+    <dt>bash</dt>
+    <dd>目前大多数linux默认的shell，共有40个命令</dd>
+    <dt>ksh</dt>
+    <dd>有42条内部命令，与bash相比有一定的限制性，主要用于unix如HP-UNIX
+    <dt>dash</dt>
+    <dd>dash为跑脚本而生，具有比bash更快的效率，但是交互性较差</dd>
+    <dt>tcsh/csh</dt>
+    <dd>tcsh是csh的增强版，具有C语言风格的一种shell，内部命令有52个，目前使用的不多</dd>
+    <dt>zsh</dt>
+    <dd>shell中的极品，命令补全功能不但可以补全路径，还可以补全参数，包含有84个内部命令，使用比较复杂</dd>
+</dl><br/>
+{/block}
